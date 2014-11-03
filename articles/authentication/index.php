@@ -31,7 +31,7 @@ require('../../includes/_header.php');
 			
             <p>The <a href="http://tools.ietf.org/html/rfc6749">OAuth 2.0</a> specification defines a <i>delegation</i> protocol that is useful for conveying <i>authorization decisions</i> across a network of web-enabled applications and APIs. OAuth is used in a wide variety of applications, including providing mechanisms for user authentication. This has lead many developers and API providers to incorrectly conclude that OAuth is itself an <i>authentication</i> protocol and to mistakenly use it as such. Let's say that again, to be clear:</p>
 			
-			<p><b>OAuth 2.0 is not an authentication protocol.</b></p>
+			<p class="note"><b>OAuth 2.0 is not an authentication protocol.</b></p>
 			
 			<p>Much of the confusion comes from the fact that OAuth is used <i>inside</i> of authentication protocols, and developers will see the OAuth components and interact with the OAuth flow and assume that by simply using OAuth, they can accomplish user authentication. This turns out to be not only untrue, but also dangerous for service providers, developers, and end users.</p>
 			
