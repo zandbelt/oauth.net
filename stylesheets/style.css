@@ -56,7 +56,7 @@ body{text-align:center;margin:0}
 .clear:after,.container:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 * html .clear{height:1%}
 .clear{display:block}
-h1,h2,h3,h4,h5,h6, p,ul,ol,dl,pre,form{padding-left:5px;padding-right:5px}
+p,ul,ol,dl,pre,form{padding-left:5px;padding-right:5px}
 table{margin-left:5px;margin-right:5px}
 img{margin:0 0 18px 0}
 .pull-1{margin-left:-70px}
@@ -96,7 +96,7 @@ h1,h2,h3,h4,h5,h6 {
 h1 { font-size: 30px; line-height:36px; padding:0 0 18px 0; }
 h2 { font-size: 20px; line-height:36px; }
 h3 { font-size: 16px; line-height:36px; }
-h4 { font-size: 14px; font-weight:bold; }
+h4 { font-size: 16px; font-weight:bold; }
 h5 { font-size: 12px; font-weight:bold; }
 h6 { font-size: 12px; }
  
@@ -110,6 +110,7 @@ p img       { float: left; margin:18px 18px 18px 0; padding:0; }
 p img.top   { margin-top:0; } /* Use this if the image is at the top of the <p>. */
  
 ul, ol      { margin: 0 0 18px 0; }
+ul ul       { margin-bottom: 0; }
 ul          { list-style-type:circle; }
 ol          { list-style-type: decimal; }
 dl          { margin: 0 0 18px 0; }
@@ -252,7 +253,6 @@ ul.navigation li {
 #secondary ul.navigation a:hover {
 	background: #e5f1ff;
 }
-body.advisories #nav-advisories,body.community #nav-community,body.blog #nav-blog,body.code #nav-code,body.about #nav-about,body.documentation #nav-documentation{border-bottom: 6px solid #e5f0ff;}
 /* @end */
  
 /* @group Main */
@@ -278,6 +278,9 @@ body.advisories #nav-advisories,body.community #nav-community,body.blog #nav-blo
 }
 #main h3 .caps {
 	font-size: 1.3em;
+}
+#main h4 {
+	padding-left: 0;
 }
 #main .hfeed .hentry {
 	list-style: none;
@@ -390,3 +393,68 @@ clear: both;
 	
 /* @end */
 	
+
+.book-row {
+	display: flex;
+	flex-direction: row;
+}
+.book-row .left {
+	flex: 1 auto;
+}
+.book-row .left a {
+}
+.book-row .left img {
+	width: 180px;
+	margin-right: 1em;
+	border: 4px #ccc solid;
+}
+.book-row .right {
+	flex: 0 auto;
+}
+
+
+.article-author-box {
+	padding: 6px;
+	border: 2px solid #e6ecf2;
+}
+
+
+footer {
+	border-top: 3px #B2CCFF solid;
+	padding: 30px 0;
+	margin-top: 30px;
+}
+
+footer .follow {
+	margin-right: 40px;
+	float: right;
+	padding: 20px 0;
+}
+
+footer .supported {
+	margin-left: 40px;
+	padding: 20px 0;
+}
+
+footer .supported a {
+	text-decoration: none;
+	color: #555;
+}
+
+footer .supported a:hover {
+	color: #777;
+}
+
+footer .supported img {
+	vertical-align: middle;
+	margin: 0;
+	margin-left: 0.3em;
+}
+
+footer .source {
+	font-size: 14px;
+}
+
+footer .source a {
+	text-decoration: none;
+}

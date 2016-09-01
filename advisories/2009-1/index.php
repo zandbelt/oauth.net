@@ -5,14 +5,11 @@ $page_secondary = "2009.1";
 $page_meta_description = "";
 require('../../includes/_header.php');
 ?>
-<body class="<?php echo $page_section; ?>">
   <div class="container">
     <div id="header" class="column first last span-20">
-      <h1 id="site-name" class="column first span-5 prepend-1 append-1"><a href="/">OAuth</a></h1>
+      <?php require('../../includes/_site_name.php'); ?>
       <div id="primary" class="column span-13 last">
-
-<?php require('../../includes/_nav_primary.php'); ?>
-
+        <?php require('../../includes/_nav_primary.php'); ?>
       </div>
       <div id="secondary" class="column span-18 append-1 prepend-1 first last">
         <ul class="navigation">
@@ -58,6 +55,7 @@ require('../../includes/_header.php');
 		
 			<p>There are no reported exploits of this attack.</p>
 		
+    </div>
   </div>
 
 <?php require('../../includes/_footer.php'); ?>
